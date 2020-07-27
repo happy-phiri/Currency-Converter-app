@@ -1,0 +1,66 @@
+body {
+    background: #0f0c29;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #24243e, #302b63, #0f0c29);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #24243e, #302b63, #0f0c29); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+    color: white;
+    font-family: 'Raleway', sans-serif;
+    
+}
+
+h1 {
+    /* font-family: 'Merriweather', serif; */
+    font-family: 'Libre Baskerville', serif;
+    font-weight: 900;
+    letter-spacing: 0.2em;
+    margin: 2% auto;
+}
+
+h2 {
+    color: rgb(219, 219, 219);
+    font-family: 'Merriweather', serif;
+    font-size: x-large;
+    font-weight: 500;
+    letter-spacing: 0.1em;
+}
+
+.main-content {
+    margin: 10% auto;
+    text-align: center;
+}
+
+.calculationButton {
+    margin-top: 2%;
+    padding: 0.7% 1.7%;
+    background-color: #302b63;
+}
+
+.calculationButton:hover {
+    background-color: #24243e;
+}
+
+input {
+    padding: 0.5% 1.5%;
+    margin: 1.5% 1%;
+}
+
+input::placeholder {
+    text-transform: capitalize;
+}
+
+.input1 {
+    margin-bottom: 0;
+}
+
+.footer {
+    color: rgb(219, 219, 219);
+    font-size: smaller;
+    line-height: 0.2;
+    text-align: center;
+}
+
+@media (max-width:790px){
+    #label1 {
+        display: none;
+    }
+}
