@@ -4,6 +4,7 @@ const bodyParser = require('body-parser');
 const ejs = require('ejs');
 const https = require('https');
 const _ = require('lodash');
+require('dotenv').config();
 
 app.set('view engine', 'ejs');
 
@@ -20,7 +21,7 @@ app.get("/", function(req, res){
 
 
 app.post("/", function(req, res){
-    const oxrApikey = "ab14b8a2315a43788fd42051e32cfc7c";
+    const oxrApikey = process.env.OXR_APIKEY;
     const url ="https://openexchangerates.org/api/latest.json?app_id=" + oxrApikey;
 
     https.get(url, function(response){
